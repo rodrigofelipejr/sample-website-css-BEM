@@ -11,41 +11,41 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
   <!--Our own stylesheet-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <nav>
-        <div class="nav-brand">
+      <nav class="header__nav">
+        <div class="header__brand">
           <a href="index.html">
             <img src="images/logo.png" alt="" />
           </a>
         </div>
 
-        <div class="menu-icons open">
+        <div class="header__icon  header__icon-open">
           <i class="icon ion-md-menu"></i>
         </div>
 
-        <ul class="nav-list">
-          <div class="menu-icons close">
+        <ul class="header__list">
+          <div class="header__icon header__icon-close">
             <i class="icon ion-md-close"></i>
           </div>
-          <li class="nav-item">
-            <a href="#" class="nav-link current">Home</a>
+          <li class="header__item">
+            <a href="#" class="header__link header__link-current">Início</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Destinations</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Destinos</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Pricing</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Preços</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Booking</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Reservas</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Sobre</a>
           </li>
         </ul>
       </nav>
@@ -53,54 +53,54 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="slider">
       <div class="container">
-        <div class="main-message">
-          <h3>The great outdoor</h3>
-          <h1>Adventure</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero tenetur quae dolores non ipsa odit tempore
-            quas voluptas. Est vero iure voluptatum consequuntur culpa doloremque placeat animi fugit itaque ut.
+        <div class="slider__message">
+          <h3 class="slider__sub">Trilha & Escalada na </h3>
+          <h1 class="slider__title">Montanha do Canal</h1>
+          <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero tenetur quae dolores non ipsa odit tempore
+            quas voluptas. Est vero iure voluptatum consequuntur culpa doloremque placeat animi fugit.
           </p>
-          <div class="cta">
-            <a href="#" class="btn">Book now</a>
+          <div class="slider__cta">
+            <a href="#" class="btn">Reserve agora</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="experience-outdoors">
+    <section class="activities">
       <div class="container">
-        <div class="title-heading">
-          <h3>Experience</h3>
-          <h1>The thrilling outdoors</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="spotlight">
+          <h3 class="spotlight__sub">Conheça nossas</h3>
+          <h1 class="spotlight__title">Atividades ao ar livre</h1>
+          <p class="spotlight__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit oloribus ea temporibus adipisci sed.</p>
         </div>
-        <div class="activities-grid">
+        <div class="activities__grid">
           <!-- grid item #1 -->
-          <div class="activities-grid-item star-gazing">
-            <i class="ion ion-md-star"></i>
-            <h1>Star Gazing</h1>
-            <p>
+          <div class="activities__item activities__item-hiking">
+            <i class="activities__icon ion ion-md-compass"></i>
+            <h1 class="activities__title">Caminhadas</h1>
+            <p class="activities__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, amet autem! Nemo ab temporibus rem,
               sunt repudiandae hic praesentium deserunt consequuntur fugiat, provident deleniti delectus corporis totam,
               ducimus dolorem soluta?
             </p>
           </div>
           <!-- grid item #2 -->
-          <div class="activities-grid-item hiking">
-            <i class="ion ion-md-compass"></i>
-            <h1>Hiking</h1>
-            <p>
+          <div class="activities__item activities__item-stars">
+            <i class="activities__icon ion ion-md-star"></i>
+            <h1 class="activities__title">Observar as estrelas</h1>
+            <p class="activities__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, amet autem! Nemo ab temporibus rem,
               sunt repudiandae hic praesentium deserunt consequuntur fugiat, provident deleniti delectus corporis totam,
               ducimus dolorem soluta?
             </p>
           </div>
           <!-- grid item #3 -->
-          <div class="activities-grid-item camping">
-            <i class="ion ion-md-bonfire"></i>
-            <h1>Camping</h1>
-            <p>
+          <div class="activities__item activities__item-camping">
+            <i class="activities__icon ion ion-md-bonfire"></i>
+            <h1 class="activities__title">Camping</h1>
+            <p class="activities__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, amet autem! Nemo ab temporibus rem,
               sunt repudiandae hic praesentium deserunt consequuntur fugiat, provident deleniti delectus corporis totam,
               ducimus dolorem soluta?
@@ -112,30 +112,28 @@
 
     <section class="testimonials">
       <div class="container">
-        <div class="testimonial">
-          <div class="testimonial-text-box">
-            <p>This trip was amazing! I can`t wait to do it all over again!</p>
-            <i class="icon ion-md-quote"></i>
-            <div class="testimonial-customer">
-              <img src="images/profile-pic.jpg" alt="">
-              <h1>Martin G.</h1>
-            </div>
+        <div class="testimonials__item">
+          <div class="testimonials__description">
+            <p class="testimonials__text">Que experiência incrível! Mal posso esperar para fazer tudo de novo!</p>
+            <i class="testimonials__icon icon ion-md-quote"></i>
+            <img class="testimonials__image" src="images/profile-pic.jpg" alt="">
+            <h1>Rodrigues J.</h1>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="begin-adventure">
+    <section class="adventure">
       <div class="container">
-        <div class="title-heading">
-          <h3>Let the</h3>
-          <h1>Adventure begin</h1>
-          <p>Lorem ipsim dolor sit amet, consectetur adipisicing elit</p>
+        <div class="spotlight">
+          <h3 class="spotlight__sub">Venha curtir essa</h3>
+          <h1 class="spotlight__title">Aventura hoje mesmo!</h1>
+          <p class="spotlight__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit oloribus ea temporibus adipisci sed.</p>
         </div>
-        <div class="adventure-grid">
+        <div class="adventure__grid">
           <!-- Adventure grid item #1 -->
           <div class="adventure-grid-item">
-            <p>
+            <p class="adventure__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, impedit laboriosam rerum aspernatur vel ea,
               quae, obcaecati voluptatum cum eum optio deserunt adipisci recusandae itaque? Minima cum ab voluptatibus
               deleniti!
@@ -150,7 +148,7 @@
             </p>
           </div>
         </div>
-        <a class="btn" href="#">Book yout adventure</a>
+        <a class="btn" href="#">Reserve já</a>
       </div>
     </section>
   </main>

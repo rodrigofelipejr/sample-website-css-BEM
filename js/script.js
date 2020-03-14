@@ -1,9 +1,9 @@
-const selectElement = (s) => document.querySelector(s)
+const selectElement = (el) => document.querySelector(el)
 
-selectElement('.open').addEventListener('click', () => {
-  selectElement('.nav-list').classList.add('active')
+selectElement('.header__icon-open').addEventListener('click', () => {
+  selectElement('.header__list').classList.add('header__list--active')
 })
 
-selectElement('.close').addEventListener('click', () => {
-  selectElement('.nav-list').classList.remove('active')
+selectElement('.header__icon-close').addEventListener('click', () => {
+  selectElement('.header__list').classList.remove('header__list--active')
 })
